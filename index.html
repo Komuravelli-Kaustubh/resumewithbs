@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,18 +13,24 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Resume 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume1bs.css">
 
 </head>
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" ;>
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" ;>
             <div class="container-fluid">
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#res"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="res">
 
                         <li class="nav-item">
                             <a class="nav-link" href="#About me"><svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -69,11 +75,68 @@
 
                 </div>
             </div>
+        </nav> -->
+        <!-- <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              -- <h5 class="text-white h4">Collapsed content</h5> -->
+        <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
+        <!-- </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            </div>
+          </nav> -->
+
+
+        <!-- //<nav class="navbar navbar-expand-lg navbar-dark bg-dark" ;> -->
+
+        <nav class="navbar  navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#About me"><i class="fa fa-home"
+                                    aria-hidden="true"></i>About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Education1"><i class="fa fa-book"
+                                    aria-hidden="true"></i>Educational Qualifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Experience"><i class="fa fa-file-word-o"
+                                    aria-hidden="true"></i>Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Skills"><i class="fa fa-graduation-cap"
+                                    aria-hidden="true"></i>Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#details"><i class="fa fa-id-card" aria-hidden="true"></i>Personal
+                                Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="fa fa-envelope-open-o"
+                                    aria-hidden="true"></i>Contact Details</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
         </nav>
         <div class="first-sec">
 
-            <img src="photo.jpeg" alt="profile photo"
-                height="350">
+            <img src="photo.jpeg" alt="profile photo" height="350" id="myphoto">
             <p>
             <h1><b><i> Komuravelli Kaustubh</i></b></h1>
 
@@ -95,12 +158,12 @@
             </p>
         </div>
 
-        <div id="Education">
+        <div id="Education1">
             <fieldset style="background-color:rgb(182, 129, 59)">
                 <strong>Educational Qualifications--</strong>
             </fieldset>
 
-            <table class="education">
+            <table class="education" id="edtable">
                 <tbody>
                     <tr>
                         <th>Course</th>
@@ -134,7 +197,7 @@
             <fieldset style="background-color:rgb(182, 129, 59)">
                 <b>Experience--</b>
             </fieldset>
-            <p style="font-size:larger">
+            <p style="font-size:larger;font-size: 35px">
                 <b>
                     Fresher
                 </b>
